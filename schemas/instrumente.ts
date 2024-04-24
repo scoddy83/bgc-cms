@@ -1,46 +1,24 @@
+import instrumenttyp from "./instrumenttyp";
+
 export default {
     title: 'Instrument',
     name: 'instrument',
     type: 'document',
     fields: [
         {
-          title: 'Name',
-          name: 'jahNamer',
-          type: 'string',
-        },
-        {
-          title: 'Vorname',
-          name: 'vorname',
-          type: 'date',
-        },
-        {
-          title: 'Geburtsdatum',
-          name: 'geburtsdatum',
-          type: 'date',
-        },
-        {
-          title: 'Spruch',
-          name: 'spruch',
-          type: 'string',
-        },
-        {
           title: 'Instrument',
           name: 'instrument',
-          type: 'instrumente',
+          type: 'string',
         },
         {
-          title: 'Vorstand',
-          name: 'vorstand',
-          type: 'vorstand',
+          title: 'Register',
+          type: 'reference',
+          name: 'register',
+          to: [{type: 'instrumenttyp'}],
         },
         {
-          title: 'Mitglied sit',
-          name: 'eintritt',
-          type: 'date',
-        },
-        {
-          title: 'Profilbild',
-          name: 'profilbild',
+          title: 'Bild',
+          name: 'bild',
           type: 'image',
         }
     ]

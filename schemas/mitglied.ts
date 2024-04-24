@@ -1,5 +1,6 @@
 // We import object and document schemas
-// import { instrumente } from "./instrumente";
+ import instrument from "./instrumente";
+ import vorstand from "./vorstand";
 
 export default {
     title: 'Mitglied',
@@ -28,13 +29,15 @@ export default {
         },
         {
           title: 'Instrument',
+          type: 'reference',
           name: 'instrument',
-          type: 'string',
+          to: [{type: 'instrument'}],
         },
         {
           title: 'Vorstand',
+          type: 'reference',
           name: 'vorstand',
-          type: 'string',
+          to: [{type: 'vorstand'}],
         },
         {
           title: 'Mitglied sit',
