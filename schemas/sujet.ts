@@ -9,6 +9,11 @@ export default {
           type: 'string',
         },
         {
+          title: 'Sujet Basler Fasnacht',
+          name: 'sujetBaslerFasnacht',
+          type: 'string',
+        },
+        {
           title: 'Zedel',
           type: 'text',
           name: 'zedel',

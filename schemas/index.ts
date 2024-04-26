@@ -7,6 +7,7 @@ import stygg from './stygg'
 import news from './news'
 import events from './event'
 import sujet from './sujet'
+import banner from './banner'
 
 export const schemaTypes = [mitglied, 
                             instrumente, 
@@ -15,4 +16,5 @@ export const schemaTypes = [mitglied,
                             stygg,
                             news,
                             events,
-                            sujet]
+                            sujet,
+                            banner]
