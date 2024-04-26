@@ -10,13 +10,13 @@ export default {
       },
       {
         title: 'Bild',
-        type: 'bild',
-        name: 'image',
+        type: 'image',
+        name: 'bild',
       },
       {
           title: 'Titel',
-          type: 'titel',
-          name: 'string',
+          type: 'string',
+          name: 'PageTitle',
       },
       {
         title: 'Text',
